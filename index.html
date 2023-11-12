@@ -1,119 +1,121 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+
 <head>
-<style>
-		body {
-			font-family: Arial, sans-serif;
-			font-size: 12px;
-			text-align: center;
-		}
-		
-		h1 {
-			font-size: 20px;
-			margin-top: 5px;
-		}
-		
-		p {
-			margin-top: 10px;
-			text-align: center;
-		}
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Your Webshop - Home</title>
+    <!-- Include Blockonomics payment button script -->
 
-</style>
+    <style>
+        /* Add any additional styling here */
+        .product-image {
+            max-width: 100%;
+            height: auto;
+        }
+
+        .product-details {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .product-details h2 {
+            margin-bottom: 10px;
+        }
+
+        .product-details p {
+            margin-bottom: 20px;
+        }
+
+        .viewDetailsBtn,
+        .buyNowBtn {
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+            border-radius: 4px;
+            transition: background-color 0.3s;
+            margin-right: 10px;
+            text-decoration: none; /* Remove underline */
+            display: inline-block;
+        }
+
+        .viewDetailsBtn:hover,
+        .buyNowBtn:hover {
+            background-color: #0056b3;
+        }
+    </style>
 </head>
+
 <body>
-	<p>
-	<pre>
-Welcome to:
------------------------------------------------------------------------------
- ___  _  _  __  __  __  __  _  _  ___  ___   __  ____  ___ 
-(  ,)( )( )(  \/  )(  \/  )( )( )(  ,)(  _) (  )(_  _)/ __)
- )  \ )()(  )    (  )    (  )()(  ) ,\ ) _) /__\  )(  \__ \
-(_)\_)\__/ (_/\/\_)(_/\/\_) \__/ (___/(___)(_)(_)(__) (___/
------------------------------------------------------------------------------
-[Home X]   [About]   [Music]   [Videos]   [Drumkits]   [VST Presets]
------------------------------------------------------------------------------
-</pre>
+    <header>
+        <h1>Your Webshop</h1>
+    </header>
 
-</p>
-<h1>Hello</h1>
-My name is rummubeats. I am a 23 year old artist from Denver, who is mainly focused on lofi, phonk and many other genres. <br>
-<pre>
------------------------------------------------------------------------------
-</pre>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="products.html">Products</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="faq.html">FAQ</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
 
+    <div class="center-container">
+        <section class="welcome-section">
+            <h2>Welcome to Your Webshop!</h2>
+            <p>Explore our latest products and stay updated with the latest news.</p>
+        </section>
 
-<a href="https://www.soundcloud.com/rummubeats">Soundcloud</a>
+        <section class="latest-news">
+            <h2>Latest News</h2>
+            <div class="news-item">
+                <h3>Exciting Music Festival Coming Soon!</h3>
+                <p>We are thrilled to announce that we will be hosting an electrifying music festival this summer. Get ready for a weekend filled with amazing performances, great vibes, and unforgettable memories.</p>
+            </div>
+            <div class="news-item">
+                <h3>Our New Product Lineup is Here!</h3>
+                <p>Discover our latest collection of cutting-edge products. From innovative gadgets to stylish accessories, we have something for everyone. Browse our online store to be among the first to experience these exciting additions!</p>
+            </div>
+            <!-- Add more news items as needed -->
+        </section>
+    </div>
 
-<br>
-<a href="https://youtube.com/@rummubeats">Youtube</a>
+    <div class="center-container">
+        <section class="latest-news">
+            <h2>Latest Products</h2>
+            <div class="product-details">
+                <img class="product-image" src="https://i.imgur.com/lMF3JUz.png" alt="Chill Exotic Product">
+                <h2>Our New Product: Chill Exotic</h2>
+                <p>Experience the ultimate relaxation with our newest product, Chill Exotic. This exquisite blend of comfort and style is designed to enhance your leisure moments. Perfect for cozy evenings and laid-back weekends.</p>
+                <a href="product1.html" class="viewDetailsBtn">View Now</a>
+                <a href="product1.html" class="buyNowBtn" onclick="buyNow()">Buy Now</a>
+                <div id="loadingMessage">Please wait, loading payment gateway</div>
+            </div>
+        </section>
+    </div>
 
-<br>
-<a href="https://www.instagram.com/rummubeats/">Instagram</a>
+    <section class="product-container">
+        <!-- Product items go here -->
+    </section>
 
-<br>
-<a href="https://discord.gg/pdwEFNMS">Discord Server</a>
-<br>
-<br>
-
-Mail: rummubeats@hotmail.com
-<br>
-<br>
-
-<a href="https://rummubeats.sellpass.io/products/test">Drum Kit</a>
-<a href="https://shoppy.gg/product/MGDmaj3">Drum Kit 2</a>
-	
-	
-
-<br>
-
-<pre>
------------------------------------------------------------------------------
-</pre>
-
-If you are feeling generous, and want to buy me a coffee, <br> you can do so by sending crypto here:
-<br><br>
-<details>
-    <summary>click to view Wallet Adresses.</summary>
-<pre>
-BTC: 15mbyYsBFbRP57K8Jm1eGWHdTVpgh7RPJo
-<br>DOGE: DCNNtnwnPkVzdPYQb2bZAk32qwW5jR9yKv
-<br>ETH: 0xb54fc113a021cc776fd766e97f4e38b9d8897caa
-<br>LTC: LSTEckJyAzqmMC3y2abHtzwCB294WKMf5E
-<br>XMR: 44awYp3mkEJN9R4DsedxZoVALcuw2ysi1aePyz3KmUKNJZZfMcNSc1ygQzEKiTfCfk3eXt5qqdorxjN53pGKTsMECrWTWE7
-<br>DOT: 15z588W8bofzbuiCQyhFz8T3osY5NJDPaTFRVYzG9eqGMdca
-<br>BUSD: 0xb54fc113a021cc776fd766e97f4e38b9d8897caa
-<br>MATIC: 0x345a393a8d628d8041dda78414fc97933ab856ad
-<br>RIPPLE: rog9CFWHEKuXbHVvF46XAkBSF2xRULkSM
-<br>USDT: TFT3a4ZkriCxcdRqXRPKSehibnoQy6Ju64
-</pre>
-</details>
-
-<br>
-Thanks, much appreciated.<br> ☁ ▅▒░☼‿☼░▒▅ ☁
-<br>
-<pre>
------------------------------------------------------------------------------
-</pre>
-
-<br> 
-be sure to check out our Forums, to stay updated about recent beat battles, user created content and<br>our community driven gaming network that hosts gaming events every few weeks<br>
-<br>
-<a href="https://notfunctionala.2ix.de">notfunctional Forums</a>
-<br>
-<div>
-<pre>
-greetings,
+<footer>
+    <p>&copy; 2023 Your Webshop. All rights reserved.</p>
+    <div>
+    
+        <a href="compliances.html">Compliances</a>
+        <a href="tos.html">Terms of Service</a>
+        <a href="imprint.html">Imprint</a>
+        <a href="payment_methods.html">Payment Methods</a>
+        <a href="shipping.html">Shipping Information</a>
+    </div>
+</footer>
 
 
-                                                 |                      |          
-   __|   |   |   __ `__ \    __ `__ \    |   |   __ \     _ \    _` |   __|    __| 
-  |      |   |   |   |   |   |   |   |   |   |   |   |    __/   (   |   |    \__ \ 
- _|     \__,_|  _|  _|  _|  _|  _|  _|  \__,_|  _.__/   \___|  \__,_|  \__|  ____/ 
-                                                                                   
-
-
-</pre>
-</div>
-</p>
 </body>
+
 </html>
