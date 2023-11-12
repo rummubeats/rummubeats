@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Your Webshop - Product 1</title>
+    <!-- Include Blockonomics payment button script -->
+    <script src="https://www.blockonomics.co/js/pay_button.js"></script>
+
+</head>
+
+<body>
+    <header>
+        <h1>Your Webshop</h1>
+    </header>
+
+    <nav>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="products.html">Products</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="faq.html">FAQ</a></li>
+        <li><a href="contact.html">Contact</a></li>
+    </nav>
+
+    <section class="product-details">
+        <div class="product">
+            <a href="https://i.imgur.com/lMF3JUz.png">
+                <img src="https://i.imgur.com/lMF3JUz.png" alt="Product 1 Image" style="width: 100%; max-width: 1200px; height: auto;">
+            </a>
+
+            <h2>Product 1</h2>
+            <p>Description of Product 1. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ac augue sed ex gravida tincidunt.</p>
+            <p class="product-price">Price: $XX.XX</p>
+
+            <!-- Bitcoin symbol -->
+            <img src="https://static.vecteezy.com/system/resources/previews/008/505/801/original/bitcoin-logo-color-illustration-png.png" alt="Bitcoin Logo" style="width: 20px; height: 20px; margin-bottom: 5px;">
+<br>
+            <!-- Blockonomics payment button -->
+            <button class="blockoPayBtn" data-toggle="modal" data-uid="72fe129b33ab4fd1" onclick="buyNow()">Buy Now</button>
+<br>
+            <!-- Loading message with animated dots -->
+            <div id="loadingMessage">Please wait, loading payment gateway</div>
+        </div>
+    </section>
+
+<footer>
+    <p>&copy; 2023 Your Webshop. All rights reserved.</p>
+    <div>
+    
+        <a href="compliances.html">Compliances</a>
+        <a href="tos.html">Terms of Service</a>
+        <a href="imprint.html">Imprint</a>
+        <a href="payment_methods.html">Payment Methods</a>
+        <a href="shipping.html">Shipping Information</a>
+    </div>
+</footer>
+
+    <script>
+        function buyNow() {
+            var loadingMessage = document.getElementById("loadingMessage");
+            loadingMessage.style.display = "inline-block";
+            setTimeout(function () {
+                loadingMessage.style.display = "none";
+                // Add logic to redirect to the payment gateway or perform other actions
+            }, 10000);
+        }
+    </script>
+</body>
+
+
+
+
+
+</html>
